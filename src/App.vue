@@ -1,15 +1,18 @@
 <template>
   <Hello msg="Xiangqi" />
+  <Board fen=";" />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Board from './board.vue'
 import Hello from './components/Hello.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    Hello
+    Hello,
+    Board,
   }
 })
 </script>
